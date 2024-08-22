@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\BarangController;
+use App\Http\Controllers\PenjualanController;
+use App\Models\Penjualan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +21,6 @@ Route::get('/', [BarangController::class, "index"]);
 Route::delete('barang/{barang}', [BarangController::class, "delete"]);
 Route::post('barang', [BarangController::class, "upsert"]);
 
+Route::get('/penjualan', [PenjualanController::class, "index"]);
+Route::delete('penjualan/{penjualan}', [PenjualanController::class, "delete"]);
+Route::post('penjualan', [PenjualanController::class, "upsert"]);

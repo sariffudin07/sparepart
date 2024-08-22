@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId("barang_id");
             $table->date('tgl_faktur');
-            $table->date('no_faktur');
+            $table->string('no_faktur');
             $table->string('nama_konsumen');
             $table->string('kode_barang');
             $table->integer('jumlah');
